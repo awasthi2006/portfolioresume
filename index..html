@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Devendra Awasthi | Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #121212;
+      color: #f0f0f0;
+    }
+    nav {
+      background: #1e3c72;
+      padding: 15px 30px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #64b5f6;
+    }
+    header {
+      background: linear-gradient(to right, #1e3c72, #2a5298);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 5px solid white;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+      object-fit: cover;
+    }
+    h1 {
+      margin-top: 20px;
+      font-size: 40px;
+    }
+    .typewriter {
+      font-size: 18px;
+      color: #ccc;
+      overflow: hidden;
+      border-right: .15em solid #fff;
+      white-space: nowrap;
+      margin: 0 auto;
+      animation:
+        typing 4s steps(40, end),
+        blink-caret 0.75s step-end infinite;
+    }
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: white; }
+    }
+    h2 {
+      text-align: center;
+      color: #64b5f6;
+      margin-top: 40px;
+      font-size: 28px;
+    }
+    section {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 30px;
+      background: #1e1e1e;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    section:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.4);
+    }
+    .button-link, .contact-button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 8px;
+      background: #2196f3;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+    .button-link:hover, .contact-button:hover {
+      background: #1976d2;
+    }
+    .project-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .project-list li {
+      list-style: none;
+      margin: 10px;
+      width: 260px;
+      background: #2a2a2a;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+    .project-list li:hover {
+      transform: scale(1.05);
+    }
+    .testimonials {
+      font-style: italic;
+      background: #1b1b1b;
+      padding: 20px;
+      border-left: 4px solid #64b5f6;
+      margin-top: 20px;
+    }
+    .resume-button {
+      display: block;
+      margin: 20px auto 0;
+      text-align: center;
+      background: #64b5f6;
+      color: black;
+      padding: 10px 25px;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .resume-button:hover {
+      background: #2196f3;
+      color: white;
+    }
+    .achievement-badge {
+      display: inline-block;
+      margin: 10px auto;
+      padding: 10px 20px;
+      background: #292929;
+      color: #64b5f6;
+      font-size: 16px;
+      border: 2px solid #64b5f6;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .quote-box {
+      margin-top: 40px;
+      padding: 20px;
+      background: #222;
+      border-left: 5px solid #64b5f6;
+      font-style: italic;
+      color: #aaa;
+    }
+    footer {
+      background-color: #0d0d0d;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+      box-shadow: 0 -4px 12px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <img src="https://raw.githubusercontent.com/awasthi2006/devendra-portfolio/main/images/profile.jpg" alt="Devendra Awasthi">
+    <h1>Devendra Awasthi</h1>
+    <div class="typewriter">Web Developer | Student | Software Engineer</div>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hello! I'm <strong>Devendra Awasthi</strong>, a passionate and detail-oriented Web Developer and Computer Science student with a strong foundation in full-stack development. I enjoy building clean, responsive, and scalable web applications using technologies like React, Node.js, and MongoDB.
+      <br><br>
+      Currently pursuing my B.Tech in Computer Science and Engineering from Kashi Institute of Technology, Varanasi, I’m constantly learning and exploring new tools and frameworks to enhance my skills.
+    </p>
+    <div class="achievement-badge">🏅 3+ Years Coding Experience</div>
+    <div class="achievement-badge">💻 10+ Projects Completed</div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <p><strong>Languages:</strong> Python, JavaScript, C, C++, HTML/CSS, SQL</p>
+    <p><strong>Developer Tools:</strong> Unix, Linux, Bash, Git, GitHub</p>
+    <p><strong>Technologies/Frameworks:</strong> MongoDB, PostgreSQL, React.js, Express.js, Node.js, Redis</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <p><strong>High School</strong><br>Intermediate Collage Babusarai, Bhadohi</p>
+    <p><strong>Intermediate</strong><br>Project Mala Higher Secondary School Guria, Kachawa Road, Varanasi</p>
+    <p><strong>B.Tech in Computer Science and Engineering</strong><br>Kashi Institute of Technology, Varanasi</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul class="project-list">
+      <li><strong>Login Page</strong><br><a class="button-link" href="https://awasthi2006.github.io/login-page/" target="_blank">Preview</a></li>
+      <li><strong>Portfolio Website</strong><br><a class="button-link" href="https://awasthi2006.github.io/devendra-portfolio/" target="_blank">Preview</a></li>
+      <li><strong>Navigation Bar</strong><br><a class="button-link" href="https://awasthi2006.github.io/navbar-project/" target="_blank">Preview</a></li>
+      <li><strong>Facebook UI Clone</strong><br><a class="button-link" href="https://awasthi2006.github.io/facebook-clone/" target="_blank">Preview</a></li>
+      <li><strong>Task Manager App</strong><br><a class="button-link" href="https://awasthi2006.github.io/task-manager-app/" target="_blank">Preview</a></li>
+      <li><strong>Blog Platform</strong><br><a class="button-link" href="https://awasthi2006.github.io/blog-platform/" target="_blank">Preview</a></li>
+      <li><strong>Chat Application</strong><br><a class="button-link" href="https://awasthi2006.github.io/chat-app/" target="_blank">Preview</a></li>
+      <li><strong>To-Do App</strong><br><a class="button-link" href="https://awasthi2006.github.io/todo-app/" target="_blank">Preview</a></li>
+      <li><strong>Flutter News App</strong><br><a class="button-link" href="https://awasthi2006.github.io/flutter-news-app/" target="_blank">Preview</a></li>
+    </ul>
+  </section>
+
+  <section class="testimonials">
+    <h2>What People Say</h2>
+    <p>"Devendra is a very reliable and consistent developer. His projects are always neat and well-organized." — Peer Review</p>
+    <p>"A quick learner and problem-solver. Highly recommend working with him." — Mentor</p>
+  </section>
+
+  <section class="quote-box">
+    <h2>Favorite Quote</h2>
+    <p>"Code is like humor. When you have to explain it, it’s bad." — Cory House</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact" style="text-align: center;">
+      <a class="contact-button" href="mailto:Devendraawasthi20061@gmail.com">Email Me</a>
+      <a class="contact-button" href="tel:+916393319055">Call Me</a>
+      <a class="contact-button" href="https://www.linkedin.com/in/devendra-awasthi-288273222" target="_blank">LinkedIn</a>
+      <a class="contact-button" href="https://github.com/awasthi2006" target="_blank">GitHub</a>
+    </div>
+    <a class="resume-button" href="/mnt/data/5c253566-b55f-4c3a-807e-7ff42d2ae965.pdf" target="_blank">Download Resume (PDF)</a>
+  </section>
+
+  <footer>
+    © 2025 Devendra Awasthi. All rights reserved.
+  </footer>
+
+</body>
+</html>
